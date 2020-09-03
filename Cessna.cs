@@ -2,14 +2,29 @@ using System;
 
 namespace Garage
 {
-    public class Cessna : IGasVehicle
+    public class Cessna : Vehicle, IGasVehicle
     {
         public double FuelCapacity { get; set; }
-        public string CurrentTankPercentage { get; set; }
+        public int CurrentTankPercentage { get; set; }
 
-        public string RefuelTank()
+        public override void Drive(Vehicle aVehicle)
         {
-            return CurrentTankPercentage = "100%";
+            Console.WriteLine($"The {aVehicle.MainColor} Cessna zips past!");
+        }
+
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The {MainColor} Cessna turned {direction} and rolled some more.");
+        }
+
+        public override void Stop(string location)
+        {
+            Console.WriteLine($"The {MainColor} Cessna stopped at the {location} and ran out of gas.");
+        }
+
+        public int RefuelTank()
+        {
+            return CurrentTankPercentage = 100;
         }
 
     }
