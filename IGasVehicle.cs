@@ -7,9 +7,9 @@ namespace Garage
         //in an interface, do not use public keyword on methods and properties; they are intrinsically public
         double FuelCapacity { get; set; }
 
-        string CurrentTankPercentage { get; set; }
+        int CurrentTankPercentage { get; set; }
 
-        string RefuelTank();
+        int RefuelTank();
 
     }
 

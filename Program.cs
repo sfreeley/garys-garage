@@ -7,18 +7,18 @@ namespace Garage
     {
         static void Main(string[] args)
         {
+
             //instanstiating new classes
             Zero fxs = new Zero();
-            fxs.BatteryKwh = 300.22;
-            fxs.CurrentChargePercentage = "50%";
+            fxs.BatteryKwh = 300.00;
+            fxs.CurrentChargePercentage = 20;
             Zero fx = new Zero();
-            fx.BatteryKwh = 100.11;
-            fx.CurrentChargePercentage = "60%";
+            fx.BatteryKwh = 100.00;
+            fx.CurrentChargePercentage = 50;
             Tesla modelS = new Tesla();
-            modelS.BatteryKwh = 12.11;
-            modelS.CurrentChargePercentage = "20%";
+            modelS.BatteryKwh = 60;
+            modelS.CurrentChargePercentage = 30;
 
-            //putting the classes into the list
             List<IElectricVehicle> electricVehicles = new List<IElectricVehicle>()
             {
                 fx,
@@ -48,10 +48,10 @@ namespace Garage
 
             Ram ram = new Ram();
             ram.FuelCapacity = 60.20;
-            ram.CurrentTankPercentage = "70%";
+            ram.CurrentTankPercentage = 70;
             Cessna cessna150 = new Cessna();
             cessna150.FuelCapacity = 90.21;
-            cessna150.CurrentTankPercentage = "20%";
+            cessna150.CurrentTankPercentage = 20;
 
             List<IGasVehicle> gasVehicles = new List<IGasVehicle>()
             {

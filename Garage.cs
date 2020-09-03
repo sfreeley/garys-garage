@@ -6,8 +6,8 @@ namespace Garage
     public class Garage
     {
 
-        List<IElectricVehicle> ElectricVehicles { get; set; }
-        List<IGasVehicle> GasVehicles { get; set; }
+        public List<IElectricVehicle> ElectricVehicles { get; set; }
+        public List<IGasVehicle> GasVehicles { get; set; }
 
     }
 }
